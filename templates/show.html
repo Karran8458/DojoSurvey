@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>POST Form Submission</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <h1>Show Page</h1>
+    <h3>Info Submitted:</h3>
+        <p>ID: {{ id_on_template }}</p>
+        <p>First Name: {{ fname_on_template }}</p>
+        <p>Last Name: {{ lname_on_template }}</p>
+        <p>Occupation: {{ occ_on_template }}</p>
+    
+        <form action="/" method="POST">
+            <input type="submit" value="Show Users">
+        </form>
+</body>
+
+</html>
