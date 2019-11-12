@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>POST Form Submission</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <h1>Index Page</h1>
+    <h1>All Users</h1>
+        {% for one_friends in all_friends %}
+                <p>Id: {{one_friends["id"]}}</p>
+                <p>First Name: {{one_friends["fname"]}}</p>
+                <p>Last Name: {{one_friends["lname"]}}</p>
+                <p>Occupation: {{one_friends["occ"]}}</p>
+        <hr>
+        {% endfor %}
+        <form action="/create_user" method="POST">
+                <input type="submit" value="Add User">
+        </form>
+</body>
+
+</html>
